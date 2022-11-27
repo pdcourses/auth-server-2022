@@ -36,3 +36,11 @@ userId (DataTypes.INTEGER), token (DataTypes.UUID), expiredIn (DATE), userAgent(
 RefreshToken.belongsTo(User, {
      foreignKey: 'userId'
 })
+
+
+******************************************************************
+******************************************************************
+
+
+
+
