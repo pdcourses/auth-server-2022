@@ -9,7 +9,7 @@ const {
   const jwt = require("jsonwebtoken");
   const { v4: uuidV4 } = require("uuid");
   const _ = require('lodash');
-  const {Sequelize} = ('../models');
+  const {Sequelize} = ('../db/models');
   const jwtService = require('./jwtService.js');
   
   function prepatedUser (user) {

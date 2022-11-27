@@ -24,6 +24,12 @@ User.hasMany(RefreshToken, {
 refreshtoken.js
 --------------------
 
+const isAfter = require('date-fns/isAfter);
+
+isUnexpired(){
+    return isAfter(new Date(this.get('expiredIn')), new Date());
+}
+
 userId (DataTypes.INTEGER), token (DataTypes.UUID), expiredIn (DATE), userAgent(STRING)
 
 
